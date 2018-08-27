@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 27
+        minSdkVersion 19
+        targetSdkVersion 28
     }
     buildTypes {
         release {
@@ -12,17 +12,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
-    dependencies {
-        testImplementation 'junit:junit:4.12'
-        testImplementation 'org.robolectric:robolectric:3.8'
-    }
-    testOptions {
-        unitTests {
-            includeAndroidResources = true
-        }
-    }
 }
 
 dependencies {
-    implementation 'org.jetbrains:annotations-java5:15.0'
 }
